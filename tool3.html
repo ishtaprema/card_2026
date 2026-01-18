@@ -3,29 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Инструмент 3 — Слово-компас</title>
+  <title>Инструмент 3 — Волшебное слово (компас)</title>
   <link rel="stylesheet" href="shared.css" />
-  <meta name="description" content="Инструмент: ответить на 4 вопроса и выбрать слово-компас года как фильтр для решений." />
 </head>
 <body>
-  <a class="skip" href="#content">Перейти к содержанию</a>
-
-  <main class="page" id="content">
-    <section class="tool" aria-labelledby="page-title">
+  <main class="page">
+    <section class="tool">
       <header class="topbar">
         <div class="title">
           <div class="kicker">Инструмент 3</div>
-          <h1 class="h1" id="page-title">Слово-компас</h1>
+          <h1 class="h1">Волшебное слово (компас)</h1>
         </div>
-
-        <div class="top-actions">
-          <div class="pill">Шаг 1: Энергия</div>
-          <a class="btn btn-ghost btn-small" href="index.html">← Назад</a>
-        </div>
+        <div class="pill">Шаг 1: Энергия</div>
       </header>
 
       <div class="card">
-        <p class="lead"><strong>Видение:</strong> энергия «Надо» ведёт к выгоранию. Энергия «Выбираю» ведёт к результату. Ответь на вопросы и выбери слово года как фильтр для решений. Ответы сохраняются автоматически.</p>
+        <p class="lead"><strong>Видение:</strong> энергия «Надо» ведёт к выгоранию. Энергия «Выбираю» ведёт к результату. Ответь на вопросы и выбери слово года как фильтр для решений.</p>
 
         <div class="two-col">
           <!-- Левая колонка: вопросы -->
@@ -33,41 +26,37 @@
             <section class="card-mini">
               <h2 class="block-title" style="margin:0 0 8px 0;"><span class="badge">1</span> Какой опыт я хочу прожить?</h2>
               <p class="block-sub" style="margin:0 0 12px 0;">Что я хочу чувствовать и проживать чаще в новом году?</p>
-              <textarea id="t3-experience" class="textarea" placeholder="Например: ясность, лёгкость, смелость..."></textarea>
+              <textarea class="textarea" placeholder="Например: спокойствие, уверенность, творчество, здоровье…"></textarea>
             </section>
 
             <section class="card-mini">
               <h2 class="block-title" style="margin:0 0 8px 0;"><span class="badge">2</span> Чем я хочу владеть?</h2>
               <p class="block-sub" style="margin:0 0 12px 0;">Каким навыком/качеством я хочу реально обладать?</p>
-              <textarea id="t3-skill" class="textarea" placeholder="Например: дисциплина, забота о себе, спокойная сила..."></textarea>
+              <textarea class="textarea" placeholder="Навык, качество характера, состояние — то, что станет твоей опорой"></textarea>
             </section>
 
             <section class="card-mini">
               <h2 class="block-title" style="margin:0 0 8px 0;"><span class="badge">3</span> Что я хочу создать?</h2>
               <p class="block-sub" style="margin:0 0 12px 0;">Какой результат/проект/систему?</p>
-              <textarea id="t3-create" class="textarea" placeholder="Например: проект, привычку, структуру..."></textarea>
+              <textarea class="textarea" placeholder="Проект, результат, система, ритм — что станет реальным к концу года"></textarea>
             </section>
 
             <section class="card-mini">
               <h2 class="block-title" style="margin:0 0 8px 0;"><span class="badge">4</span> Что и кому я хочу передать и оставить после себя?</h2>
               <p class="block-sub" style="margin:0 0 12px 0;">Какой вклад, пользу, тепло?</p>
-              <textarea id="t3-give" class="textarea" placeholder="Например: поддержка, пример, знания... "></textarea>
+              <textarea class="textarea" placeholder="Людям, семье, миру, себе — что ты хочешь оставить после себя"></textarea>
             </section>
           </div>
 
           <!-- Правая колонка: слово -->
           <aside>
             <div class="note">
-              <p class="note-title" style="margin:0 0 4px 0;">СЛОВО-КОМПАС НА ГОД</p>
-              <p class="helper" style="margin:0;">слово-фильтр для всех решений</p>
-              <input id="t3-word" class="word-input" type="text" inputmode="text" autocomplete="off" placeholder="Например: «Тепло»" aria-label="Моё слово года" />
+              <p class="note-title" style="margin:0 0 4px 0;">СЛОВО "КОМПАС" НА ГОД</p>
+              <p class="helper" style="margin:0 0 0 0;">слово-фильтр для всех решений</p>
+              <input class="word-input" type="text" aria-label="Моё слово 2026" placeholder="Например: Ясность" />
               <p class="helper">Проверка: когда сомневаюсь, я спрашиваю себя — это ведёт к моему слову?</p>
             </div>
           </aside>
-        </div>
-
-        <div class="actions">
-          <button class="btn btn-ghost" type="button" data-action="clear">Очистить ответы на этой странице</button>
         </div>
 
         <div class="footer-links">
@@ -76,7 +65,5 @@
       </div>
     </section>
   </main>
-
-  <script src="shared.js" defer></script>
 </body>
 </html>

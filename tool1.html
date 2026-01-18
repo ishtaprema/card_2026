@@ -5,27 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Инструмент 1 — Отрезание хвостов</title>
   <link rel="stylesheet" href="shared.css" />
-  <meta name="description" content="Инструмент: выписать незавершённые дела и обиды, выбрать решение и назначить дату." />
 </head>
 <body>
-  <a class="skip" href="#content">Перейти к содержанию</a>
-
-  <main class="page" id="content">
-    <section class="tool" aria-labelledby="page-title">
+  <main class="page">
+    <section class="tool">
       <header class="topbar">
         <div class="title">
           <div class="kicker">Инструмент 1</div>
-          <h1 class="h1" id="page-title">Отрезание хвостов</h1>
+          <h1 class="h1">Отрезание хвостов</h1>
         </div>
-
-        <div class="top-actions">
-          <div class="pill">Шаг 1: Энергия</div>
-          <a class="btn btn-ghost btn-small" href="index.html">← Назад</a>
-        </div>
+        <div class="pill">Шаг 1: Энергия</div>
       </header>
 
       <div class="card">
-        <p class="lead"><strong>Задание:</strong> выпиши дела, обещания и обиды, которые тянут внимание. По каждому пункту выбери решение и назначь дату. Ответы сохраняются автоматически.</p>
+        <p class="lead"><strong>Задание:</strong> выпиши дела, обещания и обиды, которые тянут внимание. По каждому пункту прими решение и назначь дату.</p>
 
         <div class="section-head">
           <div>
@@ -39,29 +32,29 @@
           <div class="item-row">
             <div class="field">
               <label for="t1-what-1">Что тянет внимание?</label>
-              <textarea id="t1-what-1" placeholder="Например: неответное сообщение / незакрытая задача / обида"></textarea>
+              <textarea id="t1-what-1" placeholder="Например: обещал(а) перезвонить / не доделал(а) задачу / держу обиду…"></textarea>
             </div>
 
             <div class="field">
               <label for="t1-goal-1">Ведёт к цели?</label>
               <select id="t1-goal-1">
-                <option value="" selected>Выбери…</option>
-                <option value="yes">Да</option>
-                <option value="no">Нет</option>
-                <option value="unknown">Не знаю</option>
+                <option value="" selected>—</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не знаю</option>
               </select>
             </div>
 
             <div class="field">
               <label>Решение</label>
               <div class="segmented" role="radiogroup" aria-label="Решение (строка 1)">
-                <input type="radio" id="t1r1-do" name="t1r1" value="do" checked>
+                <input type="radio" id="t1r1-do" name="t1r1" checked>
                 <label for="t1r1-do">Сделать</label>
 
-                <input type="radio" id="t1r1-del" name="t1r1" value="delete">
+                <input type="radio" id="t1r1-del" name="t1r1">
                 <label for="t1r1-del">Удалить</label>
 
-                <input type="radio" id="t1r1-chg" name="t1r1" value="change">
+                <input type="radio" id="t1r1-chg" name="t1r1">
                 <label for="t1r1-chg">Изменить</label>
               </div>
             </div>
@@ -76,29 +69,29 @@
           <div class="item-row">
             <div class="field">
               <label for="t1-what-2">Что тянет внимание?</label>
-              <textarea id="t1-what-2" placeholder="Коротко: что незавершено/болит"></textarea>
+              <textarea id="t1-what-2" placeholder="Коротко, по сути"></textarea>
             </div>
 
             <div class="field">
               <label for="t1-goal-2">Ведёт к цели?</label>
               <select id="t1-goal-2">
-                <option value="" selected>Выбери…</option>
-                <option value="yes">Да</option>
-                <option value="no">Нет</option>
-                <option value="unknown">Не знаю</option>
+                <option value="" selected>—</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не знаю</option>
               </select>
             </div>
 
             <div class="field">
               <label>Решение</label>
               <div class="segmented" role="radiogroup" aria-label="Решение (строка 2)">
-                <input type="radio" id="t1r2-do" name="t1r2" value="do" checked>
+                <input type="radio" id="t1r2-do" name="t1r2" checked>
                 <label for="t1r2-do">Сделать</label>
 
-                <input type="radio" id="t1r2-del" name="t1r2" value="delete">
+                <input type="radio" id="t1r2-del" name="t1r2">
                 <label for="t1r2-del">Удалить</label>
 
-                <input type="radio" id="t1r2-chg" name="t1r2" value="change">
+                <input type="radio" id="t1r2-chg" name="t1r2">
                 <label for="t1r2-chg">Изменить</label>
               </div>
             </div>
@@ -113,29 +106,29 @@
           <div class="item-row">
             <div class="field">
               <label for="t1-what-3">Что тянет внимание?</label>
-              <textarea id="t1-what-3"></textarea>
+              <textarea id="t1-what-3" placeholder="Коротко, по сути"></textarea>
             </div>
 
             <div class="field">
               <label for="t1-goal-3">Ведёт к цели?</label>
               <select id="t1-goal-3">
-                <option value="" selected>Выбери…</option>
-                <option value="yes">Да</option>
-                <option value="no">Нет</option>
-                <option value="unknown">Не знаю</option>
+                <option value="" selected>—</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не знаю</option>
               </select>
             </div>
 
             <div class="field">
               <label>Решение</label>
               <div class="segmented" role="radiogroup" aria-label="Решение (строка 3)">
-                <input type="radio" id="t1r3-do" name="t1r3" value="do" checked>
+                <input type="radio" id="t1r3-do" name="t1r3" checked>
                 <label for="t1r3-do">Сделать</label>
 
-                <input type="radio" id="t1r3-del" name="t1r3" value="delete">
+                <input type="radio" id="t1r3-del" name="t1r3">
                 <label for="t1r3-del">Удалить</label>
 
-                <input type="radio" id="t1r3-chg" name="t1r3" value="change">
+                <input type="radio" id="t1r3-chg" name="t1r3">
                 <label for="t1r3-chg">Изменить</label>
               </div>
             </div>
@@ -150,29 +143,29 @@
           <div class="item-row">
             <div class="field">
               <label for="t1-what-4">Что тянет внимание?</label>
-              <textarea id="t1-what-4"></textarea>
+              <textarea id="t1-what-4" placeholder="Коротко, по сути"></textarea>
             </div>
 
             <div class="field">
               <label for="t1-goal-4">Ведёт к цели?</label>
               <select id="t1-goal-4">
-                <option value="" selected>Выбери…</option>
-                <option value="yes">Да</option>
-                <option value="no">Нет</option>
-                <option value="unknown">Не знаю</option>
+                <option value="" selected>—</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не знаю</option>
               </select>
             </div>
 
             <div class="field">
               <label>Решение</label>
               <div class="segmented" role="radiogroup" aria-label="Решение (строка 4)">
-                <input type="radio" id="t1r4-do" name="t1r4" value="do" checked>
+                <input type="radio" id="t1r4-do" name="t1r4" checked>
                 <label for="t1r4-do">Сделать</label>
 
-                <input type="radio" id="t1r4-del" name="t1r4" value="delete">
+                <input type="radio" id="t1r4-del" name="t1r4">
                 <label for="t1r4-del">Удалить</label>
 
-                <input type="radio" id="t1r4-chg" name="t1r4" value="change">
+                <input type="radio" id="t1r4-chg" name="t1r4">
                 <label for="t1r4-chg">Изменить</label>
               </div>
             </div>
@@ -187,29 +180,29 @@
           <div class="item-row">
             <div class="field">
               <label for="t1-what-5">Что тянет внимание?</label>
-              <textarea id="t1-what-5"></textarea>
+              <textarea id="t1-what-5" placeholder="Коротко, по сути"></textarea>
             </div>
 
             <div class="field">
               <label for="t1-goal-5">Ведёт к цели?</label>
               <select id="t1-goal-5">
-                <option value="" selected>Выбери…</option>
-                <option value="yes">Да</option>
-                <option value="no">Нет</option>
-                <option value="unknown">Не знаю</option>
+                <option value="" selected>—</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не знаю</option>
               </select>
             </div>
 
             <div class="field">
               <label>Решение</label>
               <div class="segmented" role="radiogroup" aria-label="Решение (строка 5)">
-                <input type="radio" id="t1r5-do" name="t1r5" value="do" checked>
+                <input type="radio" id="t1r5-do" name="t1r5" checked>
                 <label for="t1r5-do">Сделать</label>
 
-                <input type="radio" id="t1r5-del" name="t1r5" value="delete">
+                <input type="radio" id="t1r5-del" name="t1r5">
                 <label for="t1r5-del">Удалить</label>
 
-                <input type="radio" id="t1r5-chg" name="t1r5" value="change">
+                <input type="radio" id="t1r5-chg" name="t1r5">
                 <label for="t1r5-chg">Изменить</label>
               </div>
             </div>
@@ -226,17 +219,11 @@
           <p class="note-text">Эффект Зейгарник: мозг держит в памяти незавершённое. Когда ты выписываешь хвосты и ставишь решение с датой, ты освобождаешь внимание и уменьшаешь внутреннее напряжение.</p>
         </div>
 
-        <div class="actions">
-          <button class="btn btn-ghost" type="button" data-action="clear">Очистить ответы на этой странице</button>
-        </div>
-
         <div class="footer-links">
           <a href="index.html">Назад к списку</a>
         </div>
       </div>
     </section>
   </main>
-
-  <script src="shared.js" defer></script>
 </body>
 </html>

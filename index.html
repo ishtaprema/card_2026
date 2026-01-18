@@ -5,47 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Линия Жизни - Линия Удачи</title>
   <link rel="stylesheet" href="shared.css" />
+  <meta name="description" content="План и цели на год: шаги и инструменты для работы с энергией, сожалениями и словом-компасом." />
 </head>
 <body>
-  <main class="page">
-    <section class="tool">
+  <a class="skip" href="#content">Перейти к содержанию</a>
+
+  <main class="page" id="content">
+    <section class="tool" aria-labelledby="page-title">
       <header class="topbar">
         <div class="title">
-          <div class="kicker">Линия Жизни - Линия Удачи</div>
-          <h1 class="h1">План и цели на год</h1>
+          <div class="kicker">Линия Жизни — Линия Удачи</div>
+          <h1 class="h1" id="page-title">План и цели на год</h1>
         </div>
-        <div class="pill">Наталья Космачёва</div>
+        <div class="top-actions">
+          <div class="pill">Наталья Космачёва</div>
+        </div>
       </header>
 
       <div class="card">
-        <p class="lead">Открой нужную карточку. Выполни описанные задания.</p>
+        <p class="lead">Выбери инструмент и выполни задания. Ответы сохраняются в этом браузере автоматически.</p>
 
-        <div class="item-list">
-          <div class="item-row" style="grid-template-columns: 1fr;">
-            <div class="field">
-              <label>Шаг 1: Энергия</label>
-              <div style="display:grid; gap: 10px; margin-top: 8px;">
-                <a class="btn" href="tool1.html">Инструмент 1 — Отрезание хвостов</a>
-                <a class="btn" href="tool2.html">Инструмент 2 — Трансформация сожалений</a>
-                <a class="btn" href="tool3.html">Инструмент 3 — Волшебное слово (КОМПАС)</a>
-              </div>
-            </div>
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Шаг 1: Энергия</h2>
+            <p class="section-sub">Три коротких упражнения, которые освобождают внимание и задают направление.</p>
           </div>
+        </div>
+
+        <div class="link-grid" role="list">
+          <a class="link-card" href="tool1.html" role="listitem">
+            <div class="link-title">Инструмент 1 — Отрезание хвостов</div>
+            <div class="link-desc">Выписать незавершённое, выбрать решение и назначить дату.</div>
+            <div class="link-cta">Открыть</div>
+          </a>
+
+          <a class="link-card" href="tool2.html" role="listitem">
+            <div class="link-title">Инструмент 2 — Трансформация сожалений</div>
+            <div class="link-desc">Забрать энергию из горечи: разочарование → что оставил → урок.</div>
+            <div class="link-cta">Открыть</div>
+          </a>
+
+          <a class="link-card" href="tool3.html" role="listitem">
+            <div class="link-title">Инструмент 3 — Слово-компас</div>
+            <div class="link-desc">Сформулировать желаемый опыт и выбрать слово года как фильтр решений.</div>
+            <div class="link-cta">Открыть</div>
+          </a>
         </div>
 
         <div class="note" style="margin-top: 24px;">
           <p class="note-title">Добрый день</p>
-          <p class="note-text">Меня зовут Наталья Космачева, я помогаю 
-- лучше понять себя, свои ценности, свой Путь, чтобы
-              <ul>
-              <li>создать счастливые отношения с людьми</li>
-              <li>повысить качество жизни</li>
-              <li>ощутить удовольствие от своей реализации</li>
-              </ul>
-          </p>
+          <p class="note-text">Меня зовут Наталья Космачёва. Я помогаю лучше понять себя, ценности и путь, чтобы:</p>
+          <ul class="note-list">
+            <li>создать счастливые отношения с людьми;</li>
+            <li>повысить качество жизни;</li>
+            <li>ощутить удовольствие от своей реализации.</li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <span class="muted">Совет:</span> добавь страницу в закладки — и продолжай в удобный момент.
         </div>
       </div>
     </section>
   </main>
+
+  <script src="shared.js" defer></script>
 </body>
 </html>

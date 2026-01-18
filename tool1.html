@@ -24,9 +24,6 @@
           <div>
             <h2 class="section-title">Список хвостов</h2>
             <p class="section-sub">Заполни 3–7 пунктов. Лучше коротко, но честно.</p>
-          </div>
-          <button class="btn" type="button">+ Добавить хвост</button>
-        </div>
 
         <div class="item-list">
           <!-- Строка 1 -->
@@ -39,10 +36,7 @@
             <div class="field">
               <label for="t1-goal-1">Ведёт к цели?</label>
               <select id="t1-goal-1">
-                <option value="" selected>Выбрать…</option>
-                <option>Да</option>
-                <option>Нет</option>
-                <option>Не уверен</option>
+                <option value="" selected>Да/Нет</option>
               </select>
             </div>
 
@@ -62,84 +56,9 @@
 
             <div class="field">
               <label for="t1-date-1">Дедлайн</label>
-              <input id="t1-date-1" type="date" />
+              <input id="t1-date-1" />
             </div>
           </div>
-
-          <!-- Строка 2 -->
-          <div class="item-row">
-            <div class="field">
-              <label for="t1-what-2">Что тянет внимание?</label>
-              <textarea id="t1-what-2" placeholder="Коротко одним предложением"></textarea>
-            </div>
-
-            <div class="field">
-              <label for="t1-goal-2">Ведёт к цели?</label>
-              <select id="t1-goal-2">
-                <option value="" selected>Выбрать…</option>
-                <option>Да</option>
-                <option>Нет</option>
-                <option>Не уверен</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label>Решение</label>
-              <div class="segmented" role="radiogroup" aria-label="Решение (строка 2)">
-                <input type="radio" id="t1r2-do" name="t1r2" checked>
-                <label for="t1r2-do">Сделать</label>
-
-                <input type="radio" id="t1r2-del" name="t1r2">
-                <label for="t1r2-del">Удалить</label>
-
-                <input type="radio" id="t1r2-chg" name="t1r2">
-                <label for="t1r2-chg">Изменить</label>
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="t1-date-2">Дедлайн</label>
-              <input id="t1-date-2" type="date" />
-            </div>
-          </div>
-
-          <!-- Строка 3 -->
-          <div class="item-row">
-            <div class="field">
-              <label for="t1-what-3">Что тянет внимание?</label>
-              <textarea id="t1-what-3" placeholder="Коротко одним предложением"></textarea>
-            </div>
-
-            <div class="field">
-              <label for="t1-goal-3">Ведёт к цели?</label>
-              <select id="t1-goal-3">
-                <option value="" selected>Выбрать…</option>
-                <option>Да</option>
-                <option>Нет</option>
-                <option>Не уверен</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label>Решение</label>
-              <div class="segmented" role="radiogroup" aria-label="Решение (строка 3)">
-                <input type="radio" id="t1r3-do" name="t1r3" checked>
-                <label for="t1r3-do">Сделать</label>
-
-                <input type="radio" id="t1r3-del" name="t1r3">
-                <label for="t1r3-del">Удалить</label>
-
-                <input type="radio" id="t1r3-chg" name="t1r3">
-                <label for="t1r3-chg">Изменить</label>
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="t1-date-3">Дедлайн</label>
-              <input id="t1-date-3" type="date" />
-            </div>
-          </div>
-        </div>
 
         <div class="note" style="margin-top: 24px;">
           <p class="note-title">Совет</p>

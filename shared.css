@@ -258,7 +258,7 @@ a{ color: inherit; text-decoration: none; }
 /* Notes */
 .note{
   border: 1px solid rgba(242, 183, 5, .35);
-  background: var(--accent-soft);
+  background: var(--accent);
   border-radius: var(--radius);
   padding: var(--space-3);
   color: rgba(17, 24, 39, .9);

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Инструмент 1 — Отрезание хвостов</title>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="tool">
+      <header class="topbar">
+        <div class="title">
+          <div class="kicker">Инструмент 1</div>
+          <h1 class="h1">Отрезание хвостов</h1>
+        </div>
+        <div class="pill">Шаг 1: Энергия</div>
+      </header>
+
+      <div class="card">
+        <p class="lead"><strong>Задание:</strong> выпиши дела, обещания и обиды, которые тянут внимание. По каждому пункту прими решение прямо сейчас.</p>
+
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Список хвостов</h2>
+            <p class="section-sub">Заполни 3–7 пунктов. Лучше коротко, но честно.</p>
+          </div>
+          <button class="btn" type="button">+ Добавить хвост</button>
+        </div>
+
+        <div class="item-list">
+          <!-- Строка 1 -->
+          <div class="item-row">
+            <div class="field">
+              <label for="t1-what-1">Что тянет внимание?</label>
+              <textarea id="t1-what-1" placeholder="Например: не ответил человеку / не закрыл обещание / висит конфликт"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="t1-goal-1">Ведёт к цели?</label>
+              <select id="t1-goal-1">
+                <option value="" selected>Выбрать…</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не уверен</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Решение</label>
+              <div class="segmented" role="radiogroup" aria-label="Решение (строка 1)">
+                <input type="radio" id="t1r1-do" name="t1r1" checked>
+                <label for="t1r1-do">Сделать</label>
+
+                <input type="radio" id="t1r1-del" name="t1r1">
+                <label for="t1r1-del">Удалить</label>
+
+                <input type="radio" id="t1r1-chg" name="t1r1">
+                <label for="t1r1-chg">Изменить</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="t1-date-1">Дедлайн</label>
+              <input id="t1-date-1" type="date" />
+            </div>
+          </div>
+
+          <!-- Строка 2 -->
+          <div class="item-row">
+            <div class="field">
+              <label for="t1-what-2">Что тянет внимание?</label>
+              <textarea id="t1-what-2" placeholder="Коротко одним предложением"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="t1-goal-2">Ведёт к цели?</label>
+              <select id="t1-goal-2">
+                <option value="" selected>Выбрать…</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не уверен</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Решение</label>
+              <div class="segmented" role="radiogroup" aria-label="Решение (строка 2)">
+                <input type="radio" id="t1r2-do" name="t1r2" checked>
+                <label for="t1r2-do">Сделать</label>
+
+                <input type="radio" id="t1r2-del" name="t1r2">
+                <label for="t1r2-del">Удалить</label>
+
+                <input type="radio" id="t1r2-chg" name="t1r2">
+                <label for="t1r2-chg">Изменить</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="t1-date-2">Дедлайн</label>
+              <input id="t1-date-2" type="date" />
+            </div>
+          </div>
+
+          <!-- Строка 3 -->
+          <div class="item-row">
+            <div class="field">
+              <label for="t1-what-3">Что тянет внимание?</label>
+              <textarea id="t1-what-3" placeholder="Коротко одним предложением"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="t1-goal-3">Ведёт к цели?</label>
+              <select id="t1-goal-3">
+                <option value="" selected>Выбрать…</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не уверен</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Решение</label>
+              <div class="segmented" role="radiogroup" aria-label="Решение (строка 3)">
+                <input type="radio" id="t1r3-do" name="t1r3" checked>
+                <label for="t1r3-do">Сделать</label>
+
+                <input type="radio" id="t1r3-del" name="t1r3">
+                <label for="t1r3-del">Удалить</label>
+
+                <input type="radio" id="t1r3-chg" name="t1r3">
+                <label for="t1r3-chg">Изменить</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="t1-date-3">Дедлайн</label>
+              <input id="t1-date-3" type="date" />
+            </div>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top: 24px;">
+          <p class="note-title">Совет</p>
+          <p class="note-text">Эффект Зейгарник: мозг держит в памяти незавершённое. Когда ты выписываешь хвосты и ставишь решение с датой, ты освобождаешь внимание и уменьшаешь внутреннее напряжение.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Назад к списку</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -6,7 +6,7 @@
   <title>Инструмент 1 — Отрезание хвостов</title>
   <link rel="stylesheet" href="shared.css" />
 </head>
-<body class="screenshot">
+<body>
   <main class="page">
     <section class="tool">
       <header class="topbar">
@@ -18,18 +18,25 @@
       </header>
 
       <div class="card">
-        <p class="lead">Хвост → решение → дата.</p>
+        <p class="lead"><strong>Задание:</strong> выпиши дела, обещания и обиды, которые тянут внимание. По каждому пункту прими решение и назначь дату.</p>
+
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Список хвостов</h2>
+            <p class="section-sub">Заполни 3–7 пунктов. Лучше коротко, но честно.</p>
+          </div>
+        </div>
 
         <div class="item-list">
           <!-- Строка 1 -->
           <div class="item-row">
             <div class="field">
-              <label for="t1-what-1">Хвост</label>
-              <textarea id="t1-what-1" placeholder="Коротко, по сути"></textarea>
+              <label for="t1-what-1">Что тянет внимание?</label>
+              <textarea id="t1-what-1" placeholder="Например: обещал(а) перезвонить / не доделал(а) задачу / держу обиду…"></textarea>
             </div>
 
             <div class="field">
-              <label for="t1-goal-1">К цели?</label>
+              <label for="t1-goal-1">Ведёт к цели?</label>
               <select id="t1-goal-1">
                 <option value="" selected>—</option>
                 <option>Да</option>
@@ -53,7 +60,7 @@
             </div>
 
             <div class="field">
-              <label for="t1-date-1">Дата</label>
+              <label for="t1-date-1">Дедлайн</label>
               <input id="t1-date-1" type="date" />
             </div>
           </div>
@@ -61,12 +68,12 @@
           <!-- Строка 2 -->
           <div class="item-row">
             <div class="field">
-              <label for="t1-what-2">Хвост</label>
+              <label for="t1-what-2">Что тянет внимание?</label>
               <textarea id="t1-what-2" placeholder="Коротко, по сути"></textarea>
             </div>
 
             <div class="field">
-              <label for="t1-goal-2">К цели?</label>
+              <label for="t1-goal-2">Ведёт к цели?</label>
               <select id="t1-goal-2">
                 <option value="" selected>—</option>
                 <option>Да</option>
@@ -90,7 +97,7 @@
             </div>
 
             <div class="field">
-              <label for="t1-date-2">Дата</label>
+              <label for="t1-date-2">Дедлайн</label>
               <input id="t1-date-2" type="date" />
             </div>
           </div>
@@ -98,12 +105,12 @@
           <!-- Строка 3 -->
           <div class="item-row">
             <div class="field">
-              <label for="t1-what-3">Хвост</label>
+              <label for="t1-what-3">Что тянет внимание?</label>
               <textarea id="t1-what-3" placeholder="Коротко, по сути"></textarea>
             </div>
 
             <div class="field">
-              <label for="t1-goal-3">К цели?</label>
+              <label for="t1-goal-3">Ведёт к цели?</label>
               <select id="t1-goal-3">
                 <option value="" selected>—</option>
                 <option>Да</option>
@@ -127,7 +134,7 @@
             </div>
 
             <div class="field">
-              <label for="t1-date-3">Дата</label>
+              <label for="t1-date-3">Дедлайн</label>
               <input id="t1-date-3" type="date" />
             </div>
           </div>
@@ -135,12 +142,12 @@
           <!-- Строка 4 -->
           <div class="item-row">
             <div class="field">
-              <label for="t1-what-4">Хвост</label>
+              <label for="t1-what-4">Что тянет внимание?</label>
               <textarea id="t1-what-4" placeholder="Коротко, по сути"></textarea>
             </div>
 
             <div class="field">
-              <label for="t1-goal-4">К цели?</label>
+              <label for="t1-goal-4">Ведёт к цели?</label>
               <select id="t1-goal-4">
                 <option value="" selected>—</option>
                 <option>Да</option>
@@ -164,10 +171,52 @@
             </div>
 
             <div class="field">
-              <label for="t1-date-4">Дата</label>
+              <label for="t1-date-4">Дедлайн</label>
               <input id="t1-date-4" type="date" />
             </div>
           </div>
+
+          <!-- Строка 5 -->
+          <div class="item-row">
+            <div class="field">
+              <label for="t1-what-5">Что тянет внимание?</label>
+              <textarea id="t1-what-5" placeholder="Коротко, по сути"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="t1-goal-5">Ведёт к цели?</label>
+              <select id="t1-goal-5">
+                <option value="" selected>—</option>
+                <option>Да</option>
+                <option>Нет</option>
+                <option>Не знаю</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Решение</label>
+              <div class="segmented" role="radiogroup" aria-label="Решение (строка 5)">
+                <input type="radio" id="t1r5-do" name="t1r5" checked>
+                <label for="t1r5-do">Сделать</label>
+
+                <input type="radio" id="t1r5-del" name="t1r5">
+                <label for="t1r5-del">Удалить</label>
+
+                <input type="radio" id="t1r5-chg" name="t1r5">
+                <label for="t1r5-chg">Изменить</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="t1-date-5">Дедлайн</label>
+              <input id="t1-date-5" type="date" />
+            </div>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top: 24px;">
+          <p class="note-title">Совет</p>
+          <p class="note-text">Эффект Зейгарник: мозг держит в памяти незавершённое. Когда ты выписываешь хвосты и ставишь решение с датой, ты освобождаешь внимание и уменьшаешь внутреннее напряжение.</p>
         </div>
 
         <div class="footer-links">
